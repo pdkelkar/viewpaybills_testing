@@ -1,0 +1,82 @@
+[
+ {
+   "serviceId": 0405165053,
+   "customerId": 100112183,
+   "faId": 101110864,
+   "baId": 850004245,
+   "billId": 1023185,
+   "billClosedDate": 1470614400000
+ },
+ {
+   "serviceId": 0405165201,
+   "customerId": 100009796,
+   "faId": 100970680,
+   "baId": 333340168,
+   "billId": 1023233,
+   "billClosedDate": 1470614400000
+ },
+ {
+   "serviceId": 0405165220,
+   "customerId": 100112197,
+   "faId": 101110997,
+   "baId": 850004258,
+   "billId": 1023176,
+   "billClosedDate": 1470614400000
+ },
+ {
+   "serviceId": 0405165203,
+   "customerId": 100112183,
+   "faId": 101110864,
+   "baId": 850004245,
+   "billId": 1023185,
+   "billClosedDate": 1470614400000
+ },
+ {
+   "serviceId": 0405165219,
+   "customerId": 100112183,
+   "faId": 101110864,
+   "baId": 850004245,
+   "billId": 1023185,
+   "billClosedDate": 1470614400000
+ },
+ {
+   "serviceId": 0405165230,
+   "customerId": 100112198,
+   "faId": 101111011,
+   "baId": 850004260,
+   "billId": 1023178,
+   "billClosedDate": 1470614400000
+ },
+ {
+   "serviceId": 405165093,
+   "customerId": 100112199,
+   "faId": 101111029,
+   "baId": 850004261,
+   "billId": 1023230,
+   "billClosedDate": 1470614400000
+ },
+ {
+   "serviceId": 0405165059,
+   "customerId": 100112186,
+   "faId": 101110880,
+   "baId": 850004247,
+   "billId": null,
+   "billClosedDate": null
+ },
+ {
+   "serviceId": 0405165206,
+   "customerId": 962159789,
+   "faId": 101110971,
+   "baId": 850004256,
+   "billId": 1023232,
+   "billClosedDate": 1470614400000
+ },
+ {
+   "serviceId": 0405165049,
+   "customerId": 100112181,
+   "faId": 101110856,
+   "baId": 850004244,
+   "billId": null,
+   "billClosedDate": null
+ }
+]

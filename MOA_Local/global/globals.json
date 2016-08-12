@@ -1,0 +1,44 @@
+[
+	{
+		"key": "customerId",
+		"value": "100003074",
+		"type": "text",
+		"enabled": true
+	},
+	{
+		"key": "faId",
+		"value": "5002290",
+		"type": "text",
+		"enabled": true
+	},
+	{
+		"key": "baId",
+		"value": "333335623",
+		"type": "text",
+		"enabled": true
+	},
+	{
+		"key": "billId",
+		"value": "1020167",
+		"type": "text",
+		"enabled": true
+	},
+	{
+		"key": "billClosedDate",
+		"value": "1468540800000",
+		"type": "text",
+		"enabled": true
+	},
+	{
+		"key": "serviceId",
+		"value": "0405165049",
+		"type": "text",
+		"enabled": true
+	},
+	{
+		"key": "initCount",
+		"value": "0",
+		"type": "text",
+		"enabled": true
+	}
+]

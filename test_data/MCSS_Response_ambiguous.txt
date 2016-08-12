@@ -1,0 +1,41 @@
+priyadarshan@pkelkar:~/workspace/angulartwo/first-app$ curl -H "_X_MOA_MSISDN_:0405165049" -H "Accept:application/json" "http://localhost:14420/viewpaybills/api/billings/account/101111029" | python -mjson.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   233  100   233    0     0     23      0  0:00:10  0:00:09  0:00:01    50
+{
+    "amountDue": "$0.00",
+    "billPaid": false,
+    "billingAccountNumber": "101111029",
+    "currentAmountDue": "$0.00",
+    "currentBillsList": [],
+    "currentOverdueAmount": "$0.00",
+    "dueDateExpired": false,
+    "inCredit": false,
+    "overDue": false,
+    "paymentMethod": "OTHER"
+}
+
+priyadarshan@pkelkar:~/workspace/angulartwo/first-app$ curl -H "_X_MOA_MSISDN_:0405165049" -H "Accept:application/json" "http://localhost:14420/viewpaybills/api/billings/account/101111029" | python -mjson.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   344  100   344    0     0     21      0  0:00:16  0:00:16 --:--:--    87
+{
+    "amountDue": "$0.00",
+    "billPaid": false,
+    "billingAccountNumber": "101111029",
+    "currentAmountDue": "$0.00",
+    "currentBillsList": [
+        {
+            "billDate": "Aug 8, 2016 10:00:00 AM",
+            "billNumber": "1023230",
+            "totalAmountDue": "$45.00",
+            "totalCharges": "$40.91"
+        }
+    ],
+    "currentOverdueAmount": "$0.00",
+    "dueDateExpired": false,
+    "inCredit": false,
+    "overDue": false,
+    "paymentMethod": "OTHER"
+}
+priyadarshan@pkelkar:~/workspace/angulartwo/first-app$ 
