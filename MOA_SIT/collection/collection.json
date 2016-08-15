@@ -1,6 +1,6 @@
 {
 	"id": "fd6cf686-1f7f-1b74-6d88-fd7618768589",
-	"name": "MOA_Local_Testing_Using_Variable Data",
+	"name": "MOA_SIT_Testing_Using_Variable Data",
 	"description": "",
 	"order": [
 		"c4210919-d6a2-4d25-77f4-697e1764ef92",
@@ -21,10 +21,10 @@
 			"method": "GET",
 			"data": null,
 			"dataMode": "params",
-			"tests": "tests[\"GET Bill Summary Status code is 200\"] = responseCode.code === 200;\n\nvar counter = parseInt(postman.getGlobalVariable(\"initCount\"))+1;\n\nconsole.log(\"Iteration: \"+ counter + \" for MSN: \"+data[\"serviceId\"]);\n\nconsole.log(\"GET Bill Summary Response : \\n \"+responseBody);\n\n\n//postman.clearGlobalVariable(\"variable_key\");",
+			"tests": "tests[\"GET Bill Summary Status code is 200\"] = responseCode.code === 200;\n\nvar counter = parseInt(postman.getGlobalVariable(\"initCount\"))+1;\n\nconsole.log(\"Iteration: \"+ counter + \" for MSN: \"+data[\"serviceId\"]);\n\nconsole.log(\"GET Bill Summary Response : \\n \"+responseBody);\n\n\n\n//postman.clearGlobalVariable(\"variable_key\");\n\nvar jsonData = JSON.parse(responseBody);\nvar amountDue = jsonData.amountDue;\nvar totalChargesIncludeTax = jsonData.currentBillsList[0].totalAmountDue;\n\nconsole.log(\"amountDue: \"+amountDue);\nconsole.log(\"totalChargesIncludeTax: \"+totalChargesIncludeTax);\n\ntests[\"Amount due is equal to Total charges include tax\"] = amountDue === totalChargesIncludeTax;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1470884288781,
+			"time": 1471240666377,
 			"name": "GET Bill Summary",
 			"description": "",
 			"collectionId": "fd6cf686-1f7f-1b74-6d88-fd7618768589",
