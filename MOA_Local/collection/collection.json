@@ -36,7 +36,7 @@
 			"url": "{{url}}:{{port}}/{{contextPath}}/api/billings/account/{{faId}}/{{billId}}",
 			"preRequestScript": null,
 			"pathVariables": {},
-			"method": "GET",
+			"method": "POST",
 			"data": null,
 			"dataMode": "params",
 			"tests": "tests[\"GET Bill Charges Status code is 200\"] = responseCode.code === 200;\n\nvar counter = parseInt(postman.getGlobalVariable(\"initCount\"))+1;\n\nconsole.log(\"Iteration: \"+ counter + \" for MSN: \"+data[\"serviceId\"]);\n\nconsole.log(\"GET Bill Charges Response: \\n\"+responseBody);\n\npostman.setGlobalVariable(\"initCount\",counter);",
