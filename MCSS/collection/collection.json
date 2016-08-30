@@ -8,7 +8,8 @@
 		"a8791f06-0905-9949-4f34-ea2032ca7079",
 		"13f3827f-7b57-a40c-29d8-32e4abea69cc",
 		"7b3a2928-13c4-1332-ae75-62a8dfda655a",
-		"f2fb858e-c953-bbe0-862f-3d87febf7ee0"
+		"f2fb858e-c953-bbe0-862f-3d87febf7ee0",
+		"f2fb858e-c953-bbe0-962f-3d87febf7ee0"
 	],
 	"folders": [],
 	"timestamp": 1470793477851,
@@ -115,13 +116,31 @@
 			"method": "GET",
 			"data": null,
 			"dataMode": "params",
-			"tests": "tests[\"GET Bill Outstanding Balance Status code is 200\"] = responseCode.code === 200;\n\nvar counter = parseInt(postman.getGlobalVariable(\"initCount\"))+1;\n\nconsole.log(\"Iteration: \"+ counter);\n\nconsole.log(\"GET Outstanding Balance Response: \\n\"+responseBody);\n\npostman.setGlobalVariable(\"initCount\",counter);\n\n\n",
+			"tests": "tests[\"GET Bill Outstanding Balance Status code is 200\"] = responseCode.code === 200;\n\nvar counter = parseInt(postman.getGlobalVariable(\"initCount\"))+1;\n\nconsole.log(\"Iteration: \"+ counter);\n\nconsole.log(\"GET Outstanding Balance Response: \\n\"+responseBody);\n\n\n",
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1470879750675,
 			"name": "GET Bill Outstanding Balance",
 			"description": "",
 			"collectionId": "1f5ecc77-388f-00ea-7072-4bee9e595c12",
+			"responses": []
+		},
+		{
+			"id": "f2fb858e-c953-bbe0-962f-3d87febf7ee0",
+			"headers": "Accept: application/json\nContent-Type: application/json\nX-MSISDN: {{serviceId}}\nSM_USER: {{serviceId}}\n",
+			"url": "{{mcss.base.url}}/billingcare/customer/{{customerId}}/customer-bill-spec/{{baId}}/bills?numOfCycles=3&salesChannel=SS&locale=en_US",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "tests[\"GET Bill Outstanding Balance NEW Status code is 200\"] = responseCode.code === 200;\n\nvar counter = parseInt(postman.getGlobalVariable(\"initCount\"))+1;\n\nconsole.log(\"Iteration: \"+ counter);\n\nconsole.log(\"GET Outstanding Balance NEW Response: \\n\"+responseBody);\n\npostman.setGlobalVariable(\"initCount\",counter);\n\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1470879750765,
+			"name": "GET Bill Outstanding Balance NEW",
+			"description": "",
+			"collectionId": "1f5ecc77-388f-00ea-7072-4bff7e595c12",
 			"responses": []
 		}
 	]
